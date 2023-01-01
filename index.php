@@ -9,6 +9,8 @@
     $sql = "SELECT * FROM users WHERE id =" . $_SESSION["user_id"];
     $result = mysqli_query($conn, $sql);
     $user = $result->fetch_assoc();
+
+    
 ?>    
 
     <h2>Hello, <?php echo $user['username'] ?>!</h2>
