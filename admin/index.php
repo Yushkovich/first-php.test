@@ -11,18 +11,23 @@ if(isset($_SESSION["user_id"]) && $_SESSION["user_id"] != null) {
     $user = $result->fetch_assoc(); //сохраняемв в юзере нашего пользователя
       
 // если пользователь role не админ, то делаем редирект на другую страницу
-    if($user['role'] != "admin"){
-        header("Location: /login.php");
+
+       if($user['role'] != "admin"){
+           header("Location: /login.php");
+        }
+
     } else { //если вообще нет авторизации тоже редирект
-        header("Location: /login.php");
+            header("Location: /login.php");
     }
-} 
+ 
+
+
 ?>
 
     <h2>PHP</h2>
 
    
-    <form action="/add_user.php" method="POST">
+    <form action="/admin/add_user.php" method="POST">
         <label>Name: <input type="test" name="name"></label>
         <br/>
         <label>Email: <input type="text" name="email"></label>

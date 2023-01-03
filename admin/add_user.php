@@ -1,5 +1,5 @@
 <?php
-require "configs/db.php";
+require "../configs/db.php";
 
     if(!empty($_POST)) {
         echo $_POST['name'] . " - " . $_POST['email']; 
