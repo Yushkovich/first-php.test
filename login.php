@@ -9,7 +9,7 @@
       var_dump($user);
       if($user) {
         $_SESSION["user_id"] = $user['ID'];
-        header("Location: /");
+        header("Location: /");   
         
         echo $user['ID'];      
       } else {
