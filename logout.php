@@ -6,4 +6,8 @@
         header("Location: /");
     }
 
+    if(isset($_COOKIE["user_id"]) && $_COOKIE["user_id"] != null){
+        setcookie('user_id', '', 0, '/');
+        header("Location: /");
+    }
 ?>
