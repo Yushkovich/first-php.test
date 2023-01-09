@@ -2,7 +2,9 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/configs/db.php');
 
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 
 // проверяем что мы используем сессии
 $is_session = isset($_SESSION["user_id"]) && $_SESSION["user_id"] != null; // true/ false
