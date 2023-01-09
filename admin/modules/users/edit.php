@@ -5,7 +5,6 @@
     $row = $result->fetch_assoc();
 ?>
 
-<!-- Форма для ввода данных -->
 <form action="/admin/users.php?namepost=edit&id=<?php echo $row['id']; ?>"  method="POST">
   <div class="mb-3">
     <label for="Username" class="form-label">Username</label>
@@ -15,10 +14,8 @@
     <label for="Email" class="form-label">Email</label>
     <input type="email" class="form-control" id="Email" name="email" value="<?php echo $row['email']?>" required>
   </div>
-  <button type="submit" class="btn btn-success"><i class="far fa-save"></i> Save</button>
+  <button type="submit" class="btn btn-success"><i class="far fa-save"></i>Save</button>
 </form>
-
-
 
 <?php
 include "partials/footer.php";

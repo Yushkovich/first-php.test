@@ -5,7 +5,6 @@
     $twit3 = $result3->fetch_assoc();
 ?>
 
-<!-- Форма для ввода данных -->
 <form action="/admin/posts.php?namepost=edit&id=<?php echo $twit3['id']; ?>"  method="POST">
   <div class="mb-3">
     <label for="User_id" class="form-label">User_id</label>
