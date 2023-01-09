@@ -103,7 +103,10 @@ if (!empty($_POST)) {
               Remeber me
             </label>
           </div>
-
+          <!-- <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" >
+          </div> -->
         </fieldset>
         <button type="submit" class="btn-signup">Continue</button>
       </form>

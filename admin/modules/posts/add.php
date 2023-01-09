@@ -2,7 +2,6 @@
     require($_SERVER['DOCUMENT_ROOT']. '/admin/partials/header.php');
 ?>
 
-<!-- Форма для ввода данных -->
 <form action="/admin/posts.php?namepost=add"  method="POST">
   <div class="mb-3">
     <label for="User_id" class="form-label">User_id</label>

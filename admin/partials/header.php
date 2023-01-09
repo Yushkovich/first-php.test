@@ -5,12 +5,12 @@ session_start();
 if (isset($_SESSION['user_id']) || $_COOKIE['user_id']) {
     if (isset($_SESSION['user_id'])) {
         $sql = "SELECT * FROM users WHERE id = " . $_SESSION['user_id'];
-    } elseif (isset($_COOKIE['user_id'])) {
+    } else if (isset($_COOKIE['user_id'])) {
         $sql = "SELECT * FROM users WHERE id = " . $_COOKIE['user_id'];
     }
     $result = mysqli_query($conn, $sql);
     $user = $result->fetch_assoc();
-    // var_dump($user);
+
     if($user['role'] != "admin") {
         header("Location: /register.php");
     }
