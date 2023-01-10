@@ -4,8 +4,15 @@ require('partials/header.php');
 
 <?php 
 if(isLogin()){
+    $user = getCurrentUser();
 ?>
-    <h2> Hello, name </h2>
+    <h2> Hello, <?php echo $user['username']; ?></h2>
+
+
+
+
+
+    
 <?php
 } else {
     ?>
