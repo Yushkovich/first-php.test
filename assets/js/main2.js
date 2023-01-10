@@ -1,3 +1,4 @@
+
 const switchers = [...document.querySelectorAll('.switcher')]
 
 switchers.forEach(item => {

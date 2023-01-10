@@ -9,10 +9,14 @@ if(isLogin()){
     <h2> Hello, <?php echo $user['username']; ?></h2>
 
 
+<?php
+require('partials/twit.php');
+
+?>
 
 
 
-    
+
 <?php
 } else {
     ?>
