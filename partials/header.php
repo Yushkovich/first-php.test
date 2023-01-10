@@ -1,6 +1,7 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT']. '/configs/db.php');
 if (!isset($_SESSION)) session_start();
+require($_SERVER['DOCUMENT_ROOT']. '/configs/helpers.php');
 ?>
 
 <!doctype html>
