@@ -1,16 +1,20 @@
 <?php
-require('partials/header.php');
+// require('partials/header.php');
+
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/twit.php');
 ?>
 
 <?php 
-if(isLogin()){
+if(isLogin()) {
     $user = getCurrentUser();
 ?>
     <h2> Hello, <?php echo $user['username']; ?></h2>
 
 
 <?php
-require('partials/twit.php');
+//require('partials/twit.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/twit.php');
 
 ?>
 
@@ -28,7 +32,8 @@ require('partials/twit.php');
 
 
 <?php
-require('partials/footer.php');
+//require('partials/footer.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php');
 ?>
   
   
